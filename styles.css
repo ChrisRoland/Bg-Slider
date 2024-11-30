@@ -33,9 +33,10 @@ body::before {
 .slider-container {
     box-shadow: 0 3px 6px rgba(0,0,0.16), 0 3px 6px rgba(0,0,0.23);
     height: 70vh;
-    width: 70vw;
+    width: 75vw;
     position: relative;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .slide {
@@ -62,6 +63,7 @@ body::before {
     padding: 20px;
     font-size: 30px;
     border: 2px solid orange;
+    border-radius: 5px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -78,4 +80,19 @@ body::before {
 
 .arrow-right {
     right: calc(15vw - 65px);
+}
+
+@media (max-width: 450px) {
+    .arrow {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .arrow-left {
+        left: calc(20vw - 65px);
+    }
+    
+    .arrow-right {
+        right: calc(20vw - 65px);
+    }
 }
