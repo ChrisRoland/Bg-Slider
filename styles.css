@@ -33,7 +33,7 @@ body::before {
 .slider-container {
     box-shadow: 0 3px 6px rgba(0,0,0.16), 0 3px 6px rgba(0,0,0.23);
     height: 70vh;
-    width: 75vw;
+    width: 70vw;
     position: relative;
     overflow: hidden;
     border-radius: 5px;
@@ -83,6 +83,10 @@ body::before {
 }
 
 @media (max-width: 450px) {
+    .slider-container {
+        width: 75vw;
+    }
+
     .arrow {
         padding: 10px;
         font-size: 20px;
